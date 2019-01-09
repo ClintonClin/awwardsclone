@@ -4,10 +4,9 @@ from django.contrib.auth.models import User
 import datetime as dt
 # Create your tests here.
 
-
 class categoriesTestClass(TestCase):
     def setUp(self):
-        self.Art = categories(categories='Art')
+        self.Art = categories(categories='Education')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.Art, categories))
@@ -21,14 +20,14 @@ class categoriesTestClass(TestCase):
         self.assertTrue(len(category) > 0)
 
     def test_delete_method(self):
-        self.Art.delete_category('Art')
+        self.Art.delete_category('Education')
         category = categories.objects.all()
         self.assertTrue(len(category) == 0)
 
 
 class technologiesTestClass(TestCase):
     def setUp(self):
-        self.Python = technologies(technologies='Python')
+        self.Python = technologies(technologies='Javascript')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.Python, technologies))
@@ -42,7 +41,7 @@ class technologiesTestClass(TestCase):
         self.assertTrue(len(technology) > 0)
 
     def test_delete_method(self):
-        self.Python.delete_technology('Python')
+        self.Python.delete_technology('Javascript')
         technology = technologies.objects.all()
         self.assertTrue(len(technology) == 0)
 

@@ -1,16 +1,18 @@
 {% load bootstrap4 %}
-{% load staticfiles %}
+{% load static %}
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>New Post</title>
+  <!-- <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet"> -->
+  <title class="style1">New Upload</title>
   {{form.media}}
 
-{% block styles %} {% bootstrap_css %}
+{% block styles %} 
+{% bootstrap_css %}
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="{% static 'css/edit-profile.css' %}">
 {% endblock %}
