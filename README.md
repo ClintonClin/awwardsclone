@@ -1,5 +1,5 @@
 # awwardsclone
-
+ 
 ###  Author
 Clinton Okerio
 
@@ -13,7 +13,7 @@ awwards is a clone of the website Awwwards. It allows a developer to post a proj
 4. View projects overall score
 5. View my profile page
 
-### How to use
+how to write locust tests in django### How to use
 To use awwards, you must login/register. Once logged in, you will be able to see projects posted by other users.
 You can add your own projects from your profile page to get them reviewed.
 You also have the possibility to edit your profile and view your projects.
